@@ -1,4 +1,14 @@
-FROM openjdk:11-jre-slim
-COPY target/streaming-0.0.1-SNAPSHOT.jar /app/comment-service.jar
+# Use a base image with JDK 17
+FROM openjdk:17-jdk-slim
+
+# Set the working directory
+WORKDIR /app
+
+# Copy the jar file
+COPY target/streaming-0.0.1-SNAPSHOT.jar comment-service.jar
+
+# Expose the port
 EXPOSE 8082
-ENTRYPOINT ["java", "-jar", "/app/comment-service.jar"]
+
+# Run the application
+ENTRYPOINT ["java", "-jar", "comment-service.jar"]
