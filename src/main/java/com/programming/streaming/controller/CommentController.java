@@ -1,5 +1,8 @@
 package com.programming.streaming.controller;
 
+import java.util.HashMap;
+import java.util.Map;
+
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.CrossOrigin;
@@ -21,10 +24,12 @@ import lombok.AllArgsConstructor;
 @RequestMapping("/comment")
 @AllArgsConstructor
 public class CommentController {
-    @CrossOrigin("*")
+@CrossOrigin("*")
     @GetMapping("")
-    public String getMethodName() {
-        return "Comment service";
+    public ResponseEntity<Map<String, String>> getMethodName() {
+        Map<String, String> response = new HashMap<>();
+        response.put("message", "Comment service");
+        return ResponseEntity.ok(response);
     }
     
 
