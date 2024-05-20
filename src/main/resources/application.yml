@@ -6,11 +6,11 @@ spring:
   data:
     mongodb:
       uri: mongodb://localhost:27017/comment_db
-  mvc:
-    cors:
-      mappings:
-        "/**":
-          allowedOrigins: "*"
-          allowedMethods: "*"
-          allowedHeaders: "*"
-          allowCredentials: true
+  # mvc:
+  #   cors:
+  #     mappings:
+  #       "/**":
+  #         allowedOrigins: "*"
+  #         allowedMethods: "*"
+  #         allowedHeaders: "*"
+  #         allowCredentials: true
