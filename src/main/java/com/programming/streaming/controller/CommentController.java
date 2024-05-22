@@ -15,7 +15,7 @@ import lombok.AllArgsConstructor;
 @RestController
 @RequestMapping("/comment")
 @AllArgsConstructor
-@CrossOrigin("*")
+// @CrossOrigin("*")
 public class CommentController {
     @GetMapping("/")
     public ResponseEntity<Map<String, String>> getMethodName() {
