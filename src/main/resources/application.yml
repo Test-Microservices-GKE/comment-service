@@ -3,9 +3,6 @@ server:
 spring:
   application:
     name: comment-service
-  data:
-    mongodb:
-      uri: mongodb://localhost:27017/comment_db
   # mvc:
   #   cors:
   #     mappings:
