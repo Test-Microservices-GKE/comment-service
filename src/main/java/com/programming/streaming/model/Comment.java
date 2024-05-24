@@ -1,4 +1,4 @@
-package com.programming.streaming.controller;
+package com.programming.streaming.model;
 
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.index.Indexed;
